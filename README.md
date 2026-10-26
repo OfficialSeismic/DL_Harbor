@@ -21,38 +21,33 @@ That's it!
 
 ### Playing
 
-- It is **strongly recommended** to play on a [Deadworks](https://docs.deadworks.net/getting-started/server-admins/run-a-server) server. Many abilities, interactions and more can and will break without one.
-- To just run around the map: open the console (F7), type `map dl_harbor` and press Enter.
+- It is **STRONGLY** recommended to play on a [Deadworks](https://docs.deadworks.net/getting-started/server-admins/run-a-server) server. Many abilities, interactions and more can and will break without one.
+- If you simply wish to run around, open the console (F7), type `map dl_harbor` and hit enter!
 
 ### Hosting a server
 
-Use `Server-Setup.exe` from the [Releases page](../../releases). It installs the Harbor server plugin with the game settings crafted for the intended experience, the map, and the addon, and adds `harbor` to your server's content addons.
+Use `Server-Setup.exe` from the [Releases page](../../releases). It installs the Harbor server plugin with the game settings for the intended experience, the map, and the addon.
 
-Then update your `run-server.bat` so the server launches into `dl_harbor`.
-
-#### Settings
-
-The plugin reads `harbor-balance.yaml` from `game\bin\win64\managed\plugins\`, next to `harbor-plugin.dll`. Edit it and restart the server to change a value; each key names its unit. A file with a typo or a missing key is refused as a whole: the server runs stock Deadlock and logs one `[Harbor] settings NOT applied` line naming the problem.
-
-> **Upgrading?** The setup never overwrites an existing `harbor-balance.yaml`, so your edits survive a reinstall. When a release adds settings, copy the new sections from the release's `harbor-balance.yaml` into yours. v2.3 adds `zipline_boost` and `rejuvenator_crystal`.
+Then, update your `run-server.bat` so the server launches into `dl_harbor`.
 
 ### Features
 
-- **Two lanes:** an upper lane (Bank) and a lower lane (Harbor).
-- **The Broker has arrived at the harbor!**
-- **Vaults:** a central lighthouse illuminates a vault. One minute later the ethereal hand descends and the vault opens, revealing a large number of souls to claim and fight over.
-- **Increased economy:** faster camp respawns, more trooper value, a surplus of crates, faster crate and idol respawns, and soul vaults.
-- **Earned movement:** as your team kills guardians and walkers, it gains boost pads towards the enemy.
-- **Custom art.**
+- **Two lanes**: One upper lane (Bank) and One lower lane (Harbor)
+- **The broker has arrived at the harbor**!
+- **Vaults**: A central lighthouse illuminates a vault, and after one minute when the ethereal hand descends, it opens revealing a large number of souls to claim and fight over
+- **Increased economy**: faster camp respawns, more trooper value, surplus of crates and faster crate / idol respawns, soul vaults
+- **Earned movement**: As guardians and walkers are killed by your team, your team gains access to boost-pads towards the enemy!
+- **Custom Art**
 
 ### Known issues
 
 - Midtown's minimap is shown instead of Harbor's.
 - Shop locations can be inaccurate on the minimap, mainly at the HK blue guardian.
 - Troopers sometimes bypass the shrines and gather around the patron.
-- Lane ziplines do not stay neutral at the start of the game.
+- Zipline in lanes do not stay neutral at the beginning of the game.
 
-### Community
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 Join the dl_harbor Discord to give feedback or play in hosted games!
 
