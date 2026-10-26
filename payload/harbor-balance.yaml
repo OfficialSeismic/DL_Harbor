@@ -5,28 +5,28 @@ vault_announcements:
   subtext: "The lighthouse shines upon it"
 
 midboss:
-  health_percent_of_stock: 40
+  health_percent_of_stock: 60
 
 lane_troopers:
-  soul_value_percent_of_stock: 200
+  soul_value_percent_of_stock: 120
   spawn_wave_schedule:
     - from_match_minute: 0
+      seconds_between_waves: 30
+    - from_match_minute: 6
       seconds_between_waves: 20
-    - from_match_minute: 20
-      seconds_between_waves: 20
-    - from_match_minute: 35
-      seconds_between_waves: 20
+    - from_match_minute: 25
+      seconds_between_waves: 15
 
 neutral_troopers:
-  soul_value_percent_of_stock: 200
+  soul_value_percent_of_stock: 160
 
 sinners_sacrifice:
-  soul_value_percent_of_stock: 200
+  soul_value_percent_of_stock: 150
 
 breakables:
-  soul_value_percent_of_stock: 200
+  soul_value_percent_of_stock: 150
   # this is 'at least' because tough boxes should always have 100% chance.
   drop_chance_percent_at_least: 75
 
 corrupted_broker:
-  opens_at_match_minutes: [15, 19]
+  opens_at_match_minutes: [15, 25]
